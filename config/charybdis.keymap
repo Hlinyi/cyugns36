@@ -1,8 +1,8 @@
-#include <behaviors.dtsi>
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT 0
 #define NUMBER  1
@@ -136,17 +136,17 @@
 &kp CAPS   &kp Q  &kp W  &kp E       &kp R        &kp T         &kp Y  &kp U      &kp I      &kp O    &kp P               &kp DEL
 &kp LSHFT  &kp A  &kp S  &kp D       &kp F        &kp G         &kp H  &kp J      &kp K      &kp L    &kp COLON           &kp ENTER
 &kp LCTRL  &kp Z  &kp X  &kp C       &kp V        &kp B         &kp N  &kp M      &kp COMMA  &kp DOT  &as QUESTION SLASH  &kp RSHFT
-                         &ltq 6 ESC  &ltq 1 BSPC  &ltq 2 ENTER         &kp SPACE  &to 4
+                         &ltq 3 ESC  &ltq 1 BSPC  &ltq 2 ENTER         &kp SPACE  &to 4
             >;
         };
 
         Lower {
             label = "Lower";
             bindings = <
-&none  &kp LG(D)  &kp LA(A)  &kp UP     &kp DELETE  &trans     &trans     &kp N7  &kp N8      &kp N9  &trans  &none
-&none  &kp LC(A)  &kp LEFT   &kp DOWN   &kp RIGHT   &trans     &kp EQUAL  &kp N4  &kp N5      &kp N6  &trans  &none
-&none  &kp LC(Z)  &kp LC(X)  &kp RC(C)  &kp LC(V)   &kp LG(V)  &kp MINUS  &kp N1  &kp N2      &kp N3  &trans  &none
-                             &trans     &trans      &trans                &kp N0  &kp PERIOD
+&none  &kp LG(D)  &kp LA(A)  &kp UP     &kp DELETE  &kp LA(F4)  &trans     &kp N7  &kp N8      &kp N9  &trans  &none
+&none  &kp LC(A)  &kp LEFT   &kp DOWN   &kp RIGHT   &trans      &kp EQUAL  &kp N4  &kp N5      &kp N6  &trans  &none
+&none  &kp LC(Z)  &kp LC(X)  &kp RC(C)  &kp LC(V)   &kp LG(V)   &kp MINUS  &kp N1  &kp N2      &kp N3  &trans  &none
+                             &trans     &trans      &trans                 &kp N0  &kp PERIOD
             >;
         };
 
